@@ -27,7 +27,7 @@
     all elements inside .content
   */
   .content :global(h2) {
-    @apply font-2xl font-medium;
+    @apply text-2xl font-medium;
   }
 
   .content :global(pre) {
