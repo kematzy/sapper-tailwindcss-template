@@ -24,6 +24,7 @@ const postcssPlugins = (purgecss = false) => {
     require("postcss-url")(),
     require("tailwindcss")("./tailwind.config.js"),
     require("autoprefixer")(),
+    require("precss")(),
     // Do not purge the CSS in dev mode to be able to play with classes in the browser dev-tools.
     purgecss &&
       require("@fullhuman/postcss-purgecss")({
