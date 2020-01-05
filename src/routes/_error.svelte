@@ -5,26 +5,24 @@
   const dev = process.env.NODE_ENV === 'development';
 </script>
 
-	h1, p {
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
 <style lang="postcss">
+  h1, p {
+    @apply m-0 mx-auto;
+  }
+
+  h1 {
+    @apply text-2xl font-medium m-0 mb-2;
+  }
+
+  p {
+    @apply my-4 mx-auto;
+  }
+
+  @media (min-width: 480px) {
+    h1 {
+      @apply text-3xl;
+    }
+  }
 </style>
 
 <svelte:head>

@@ -10,11 +10,10 @@
   export let posts;
 </script>
 
-	ul {
-		margin: 0 0 1em 0;
-		line-height: 1.5;
-	}
 <style lang="postcss">
+  ul {
+    @apply m-0 mb-4 leading-normal;
+  }
 </style>
 
 <svelte:head>
