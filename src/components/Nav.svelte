@@ -2,7 +2,6 @@
   export let segment;
 </script>
 
-<style>
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
@@ -46,6 +45,7 @@
 		padding: 1em 0.5em;
 		display: block;
 	}
+<style lang="postcss">
 </style>
 
 <nav>

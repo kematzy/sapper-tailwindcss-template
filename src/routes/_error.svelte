@@ -5,7 +5,6 @@
   const dev = process.env.NODE_ENV === 'development';
 </script>
 
-<style>
 	h1, p {
 		margin: 0 auto;
 	}
@@ -25,6 +24,7 @@
 			font-size: 4em;
 		}
 	}
+<style lang="postcss">
 </style>
 
 <svelte:head>

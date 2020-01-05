@@ -17,7 +17,6 @@
   export let post;
 </script>
 
-<style>
 	/*
 		By default, CSS is locally scoped to the component,
 		and any unused styles are dead-code-eliminated.
@@ -30,6 +29,7 @@
 		font-size: 1.4em;
 		font-weight: 500;
 	}
+<style lang="postcss">
 
 	.content :global(pre) {
 		background-color: #f9f9f9;

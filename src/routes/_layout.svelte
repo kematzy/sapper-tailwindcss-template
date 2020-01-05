@@ -4,7 +4,7 @@
   export let segment;
 </script>
 
-<style>
+<style lang="postcss">
   main {
     position: relative;
     max-width: 56em;
