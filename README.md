@@ -1,5 +1,8 @@
 # sapper-tailwindcss-template
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/28bb2415-f28d-40ef-9c41-3b4171fd2367/deploy-status)](https://app.netlify.com/sites/kematzy-sapper-tailwindcss-template/deploys)
+
+
 Based on the default [Sapper](https://github.com/sveltejs/sapper) [template](https://github.com/sveltejs/sapper-template).
 
 
