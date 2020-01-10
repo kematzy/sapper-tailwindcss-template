@@ -16,7 +16,11 @@
   }
 
   ul {
-    @apply m-0 mb-4 leading-normal;
+    @apply m-0 mb-4 leading-normal list-disc;
+
+    li {
+      @apply ml-6 mb-2;
+    }
   }
 </style>
 
