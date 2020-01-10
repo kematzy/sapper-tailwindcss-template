@@ -1,5 +1,6 @@
 <script>
 import Image from "svelte-image";
+import { _ } from 'svelte-i18n';
 </script>
 
 <style lang="postcss">
@@ -25,15 +26,15 @@ import Image from "svelte-image";
 </style>
 
 <svelte:head>
-  <title>Sapper TailwindCSS Starter Project template</title>
+  <title>{$_('page_title', { default: 'Sapper TailwindCSS Starter Template' })}</title>
 </svelte:head>
 
 <div class="flex flex-col md:flex-row pt-6">
   <!--Left Col-->
   <div class="flex flex-col w-full lg:w-1/2 pr-24 pb-24 pr-6">
-    <h1>Sapper TailwindCSS Starter</h1>
+    <h1>{$_('pages.home.h1')}</h1>
 
-    <p class="mb-4">Enter your super app's description here... The key is to find the right length.  Don't want it to be too long, but then don't want it to be too short so that it looks weird between the title and button below.</p>
+    <p class="mb-4">{$_('pages.home.intro')}</p>
 
   </div>
 
