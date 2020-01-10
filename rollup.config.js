@@ -10,6 +10,8 @@ import getPreprocessor from "svelte-preprocess";
 import postcss from "rollup-plugin-postcss";
 import PurgeSvelte from "purgecss-from-svelte";
 import path from "path";
+import svelteImage from "svelte-image";
+import svelteImageConfigs from "./svelte-image.config.js";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -45,13 +47,16 @@ const postcssPlugins = (purgecss = false) => {
   ].filter(Boolean);
 };
 
-const preprocess = getPreprocessor({
-  transformers: {
-    postcss: {
-      plugins: postcssPlugins() // Don't need purgecss because Svelte handle unused css for you.
+const preprocess = [
+  getPreprocessor({
+    transformers: {
+      postcss: {
+        plugins: postcssPlugins() // Don't need purgecss because Svelte handle unused css for you.
+      }
     }
-  }
-});
+  }),
+  svelteImage(svelteImageConfigs)
+];
 
 export default {
 	client: {
