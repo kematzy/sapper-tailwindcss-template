@@ -1,3 +1,7 @@
+<script>
+import Image from "svelte-image";
+</script>
+
 <style lang="postcss">
   h1, p {
     /* @apply; */
@@ -36,7 +40,10 @@
   <!--Right Col-->
   <div class="w-full lg:w-1/2 lg:py-6 text-center">
     <!--Add your product image here-->
-    <svg class="fill-current text-gray-900 w-3/5 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17 6V5h-2V2H3v14h5v4h3.25H11a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6zm-5.75 14H3a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5.75zM11 8v8h6V8h-6zm3 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path></svg>
+    <Image alt="Autumn landscape in Yosemite National Park, USA" src="photos/aniket-deole-294646-unsplash.jpg" />
+    <p class="text-xs text-gray-500">
+    Photo by <a href="https://unsplash.com/@anik3t?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Aniket Deole">Aniket Deole</a> on Unsplash
+    </p>
   </div>
 
 </div>
