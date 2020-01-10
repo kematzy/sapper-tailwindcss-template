@@ -89,13 +89,13 @@
   <div id="nav-content" class:hidden>
     <ul>
       <li class="{segment === undefined ? "active" : ""}">
-        <a class="" href=".">Home</a>
+        <a class="" href="." on:click={toggleHidden}>Home</a>
       </li>
       <li class="{segment === "about" ? " active" : ""}">
-        <a class="" href="about">About</a>
+        <a class="" href="about" on:click={toggleHidden}>About</a>
       </li>
       <li class="{segment === "blog" ? " active" : ""}">
-        <a rel=prefetch class="" href="blog">Blog</a>
+        <a rel=prefetch class="" href="blog" on:click={toggleHidden}>Blog</a>
       </li>
     </ul>
   </div>
