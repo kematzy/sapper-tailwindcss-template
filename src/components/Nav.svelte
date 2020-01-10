@@ -113,13 +113,13 @@
   <div id="nav-content" class:hidden>
     <ul>
       <li class="{segment === undefined ? "active" : ""}">
-        <a class="" href="." on:click={toggleHidden}>Home</a>
+        <a href="." on:click={toggleHidden}>Home</a>
       </li>
       <li class="{segment === "about" ? " active" : ""}">
-        <a class="" href="about" on:click={toggleHidden}>About</a>
+        <a href="about" on:click={toggleHidden}>About</a>
       </li>
       <li class="{segment === "blog" ? " active" : ""}">
-        <a rel=prefetch class="" href="blog" on:click={toggleHidden}>Blog</a>
+        <a rel=prefetch href="blog" on:click={toggleHidden}>Blog</a>
       </li>
       <li class="hoverable">
         <a id="i18n-flag" class="lowercase">{$_('flag')} { $locale }</a>
