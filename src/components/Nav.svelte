@@ -1,4 +1,5 @@
 <script>
+  import { _, locale, locales } from 'svelte-i18n';
   export let segment;
   let hidden = true;
   function toggleHidden() {
@@ -71,6 +72,29 @@
     }
   }
 
+  #i18n-menu {
+    @apply bg-gray-800 absolute hidden shadow-xl z-10;
+
+    ul {
+      @apply block p-2;
+
+      li:hover {
+        @apply bg-gray-700;
+      }
+    }
+  }
+
+  #i18n-flag {
+    position: static;
+  }
+  .hoverable { position: static; }
+  .hoverable > a:after {
+    @apply text-gray-800 text-sm relative;
+    content: "\25BC";
+    padding-left: 6px;
+    top: -1px;
+  }
+  .hoverable:hover #i18n-menu { display: block; }
 </style>
 
 <nav>
@@ -96,6 +120,23 @@
       </li>
       <li class="{segment === "blog" ? " active" : ""}">
         <a rel=prefetch class="" href="blog" on:click={toggleHidden}>Blog</a>
+      </li>
+      <li class="hoverable">
+        <a id="i18n-flag" class="lowercase">{$_('flag')} { $locale }</a>
+        <div id="i18n-menu">
+          <ul style="display: block;"><!-- NOTE: must keep style here to override global ul formatting -->
+            {#each $locales as item}
+              <li>
+                <a
+                  class:selected={$locale.includes(item)}
+                  href={`#!${item}`}
+                  on:click={() => ($locale = item)}>
+                  {item.replace('-', '_')}
+                </a>
+              </li>
+            {/each}
+          </ul>
+        </div>
       </li>
     </ul>
   </div>
