@@ -32,9 +32,9 @@
     }
 
     #nav-content {
-      @apply w-full flex-grow py-6;
+      @apply w-full flex flex-grow py-6;
 
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         @apply flex items-center w-auto hidden block py-0 pl-3;
       }
     }
@@ -43,7 +43,7 @@
   ul {
     @apply justify-end flex-1 items-center px-0;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       @apply flex px-3;
     }
 
@@ -104,7 +104,7 @@
     </a>
   </div>
 
-  <div class="block lg:hidden">
+  <div class="block md:hidden">
     <button id="nav-toggle" on:click={toggleHidden}>
       <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
     </button>
