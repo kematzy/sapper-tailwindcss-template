@@ -31,10 +31,10 @@
     }
 
     #nav-content {
-      @apply w-full flex-grow pt-6;
+      @apply w-full flex-grow py-6;
 
       @media (min-width: 1024px) {
-        @apply flex items-center w-auto hidden block pt-0 pl-3;
+        @apply flex items-center w-auto hidden block py-0 pl-3;
       }
     }
   }
@@ -43,7 +43,7 @@
     @apply justify-end flex-1 items-center px-0;
 
     @media (min-width: 1024px) {
-      @apply flex;
+      @apply flex px-3;
     }
 
     li {
