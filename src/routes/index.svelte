@@ -28,7 +28,7 @@ import Image from "svelte-image";
   <title>Sapper TailwindCSS Starter Project template</title>
 </svelte:head>
 
-<div class="flex flex-col md:flex-row items-center mt-12 py-8">
+<div class="flex flex-col md:flex-row pt-6">
   <!--Left Col-->
   <div class="flex flex-col w-full lg:w-1/2 pt-2 pb-24 px-6">
     <h1>Sapper TailwindCSS Starter</h1>
