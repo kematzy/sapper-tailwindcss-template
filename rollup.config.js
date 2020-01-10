@@ -5,6 +5,7 @@ import svelte from 'rollup-plugin-svelte';
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
+import json from '@rollup/plugin-json';
 import pkg from './package.json';
 import getPreprocessor from "svelte-preprocess";
 import postcss from "rollup-plugin-postcss";
@@ -78,6 +79,10 @@ export default {
         dedupe
       }),
       commonjs(),
+      json({
+        namedExports: false,
+        compact: !dev,
+      }),
 
       legacy && babel({
         extensions: ['.js', '.mjs', '.html', '.svelte'],
@@ -121,6 +126,10 @@ export default {
         dedupe
       }),
       commonjs(),
+      json({
+        namedExports: false,
+        compact: !dev,
+      }),
       postcss({
         plugins: postcssPlugins(!dev),
         extract: path.resolve(__dirname, "./static/global.css")
