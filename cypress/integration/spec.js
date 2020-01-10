@@ -1,19 +1,12 @@
-describe('Sapper template app', () => {
+describe('Sapper TailwindCSS Starter app', () => {
   beforeEach(() => {
     cy.visit('/')
   });
 
+  // nav related tests have been moved to nav.js
+
   it('has the correct <h1>', () => {
-    cy.contains('h1', 'Great success!')
+    cy.contains('h1', 'Sapper TailwindCSS Starter')
   });
 
-  it('navigates to /about', () => {
-    cy.get('nav a').contains('about').click();
-    cy.url().should('include', '/about');
-  });
-
-  it('navigates to /blog', () => {
-    cy.get('nav a').contains('blog').click();
-    cy.url().should('include', '/blog');
-  });
 });
