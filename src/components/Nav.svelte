@@ -8,7 +8,7 @@
 
 <style lang="postcss">
   nav {
-    @apply flex items-center justify-between flex-wrap bg-gray-700 px-2 fixed w-full z-10 top-0;
+    @apply flex items-center justify-between flex-wrap bg-gray-700 fixed w-full z-10 top-0;
 
     .brand {
       @apply text-gray-300 mr-6 font-light;
@@ -23,7 +23,7 @@
     }
 
     #nav-toggle {
-      @apply flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600;
+      @apply flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 mr-3;
 
       &:hover {
         @apply text-white border-white;
@@ -34,53 +34,49 @@
       @apply w-full flex-grow pt-6;
 
       @media (min-width: 1024px) {
-        @apply flex items-center w-auto hidden block pt-0;
+        @apply flex items-center w-auto hidden block pt-0 pl-3;
       }
     }
   }
 
   ul {
-    @apply justify-end flex-1 items-center;
+    @apply justify-end flex-1 items-center px-0;
 
     @media (min-width: 1024px) {
       @apply flex;
     }
 
     li {
-      @apply block;
+      @apply block uppercase text-sm;
 
       &:hover {
         @apply bg-gray-800;
+      }
+
+      &.active {
+        @apply bg-gray-800;
+
+        a {
+          @apply text-white;
+        }
       }
     }
   }
 
   a {
-    @apply inline-block text-gray-600 no-underline py-2 px-4;
+    @apply inline-block text-gray-400 no-underline py-2 px-4;
 
     &:hover {
       @apply text-blue-200;
     }
   }
 
-  .active {
-    @apply text-white inline-block relative;
-
-    @media (min-width: 1024px) {
-      &::after {
-        @apply absolute bg-gray-600 block h-1;
-        content: '';
-        width: calc(100% - 1em);
-        bottom: -1px;
-      }
-    }
-  }
 </style>
 
 <nav>
   <div class="brand">
     <a href=".">
-      <span class="text-xl pl-2">Sapper TailwindCSS</span>
+      <span class="text-xl">Sapper TailwindCSS</span>
     </a>
   </div>
 
@@ -92,14 +88,14 @@
 
   <div id="nav-content" class:hidden>
     <ul>
-      <li class="mr-3">
-        <a class="{segment === undefined ? "active" : ""}" href=".">Home</a>
+      <li class="{segment === undefined ? "active" : ""}">
+        <a class="" href=".">Home</a>
       </li>
-      <li class="mr-3">
-        <a class="{segment === "about" ? " active" : ""}" href="about">About</a>
+      <li class="{segment === "about" ? " active" : ""}">
+        <a class="" href="about">About</a>
       </li>
-      <li class="mr-3">
-        <a rel=prefetch class="{segment === "blog" ? " active" : ""}" href="blog">Blog</a>
+      <li class="{segment === "blog" ? " active" : ""}">
+        <a rel=prefetch class="" href="blog">Blog</a>
       </li>
     </ul>
   </div>
