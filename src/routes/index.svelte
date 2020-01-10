@@ -4,21 +4,9 @@ import { _ } from 'svelte-i18n';
 </script>
 
 <style lang="postcss">
-  h1, p {
-    /* @apply; */
-  }
-
   h1 {
     @apply text-2xl font-light m-0 mb-2 text-gray-700;
   }
-
-  /* figure {
-    @apply m-0 mb-4;
-  } */
-
-  /* img {
-    @apply w-full my-8 mx-auto max-w-sm;
-  } */
 
   p {
     @apply my-4;
