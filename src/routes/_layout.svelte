@@ -6,8 +6,13 @@
 
 <style lang="postcss">
   main {
-    @apply mx-auto;
+    @apply mx-auto mt-12 bg-gray-100 px-3;
+
+    @media (min-width: 768px) {
+      @apply px-0;
+    }
   }
+
 </style>
 
 <Nav {segment}/>
