@@ -14,6 +14,10 @@ export async function preload() {
 </script>
 
 <style lang="postcss">
+  :global(body) {
+    font-family: 'Montserrat', sans-serif;
+  }
+
   main {
     @apply mx-auto mt-12 bg-gray-100 px-3 pb-24;
 
