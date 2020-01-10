@@ -33,6 +33,14 @@ import { _ } from 'svelte-i18n';
     <span class="text-xs text-gray-500 m-0 pl-2">
     Photo by <a href="https://unsplash.com/@anik3t?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Aniket Deole">Aniket Deole</a> on Unsplash
     </span>
+
+
+    <picture>
+      <source type="image/webp" srcset="g/photos/aniket-deole-294646-unsplash-400.webp 375w,g/photos/aniket-deole-294646-unsplash-800.webp 768w,g/photos/aniket-deole-294646-unsplash-1200.webp 1024w,g/photos/aniket-deole-294646-unsplash-1500.webp 1280w">
+      <source srcset="g/photos/aniket-deole-294646-unsplash-400.jpg 375w,g/photos/aniket-deole-294646-unsplash-800.jpg 768w,g/photos/aniket-deole-294646-unsplash-1200.jpg 1024w,g/photos/aniket-deole-294646-unsplash-1500.jpg 1280w">
+      <img class="" alt="Autumn landscape in Yosemite National Park, USA" srcset="g/photos/aniket-deole-294646-unsplash-400.jpg 375w,g/photos/aniket-deole-294646-unsplash-800.jpg 768w,g/photos/aniket-deole-294646-unsplash-1200.jpg 1024w,g/photos/aniket-deole-294646-unsplash-1500.jpg 1280w" width="" height="" sizes="(max-width: 1000px) 100vw, 1000px">
+    </picture>
+
   </div>
 
 </div>
