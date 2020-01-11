@@ -5,6 +5,15 @@
 
 Based on the default [Sapper](https://github.com/sveltejs/sapper) [template](https://github.com/sveltejs/sapper-template).
 
+But with the following additions:
+
+- Tailwind CSS responsive navbar based upon: [TailwindToolbox.com - Responsive Header](https://www.tailwindtoolbox.com/templates/responsive-header)
+
+- Responsive Images, with automatic resizing based upon: [`svelte-image`](https://github.com/matyunya/svelte-image).
+
+- Internationalisation (i18n) support, with JSON based translation files based upon: [`svelte-i18n`](https://github.com/kaisermann/svelte-i18n).
+
+
 
 ## Getting started
 
@@ -14,7 +23,13 @@ Based on the default [Sapper](https://github.com/sveltejs/sapper) [template](htt
 [`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository:
 
 ```bash
-npx degit "mdauner/sapper-tailwindcss-template" my-app
+npx degit "kematzy/sapper-tailwindcss-template" my-app
+```
+
+### Using `Git clone`
+
+```bash
+git clone https://github.com/kematzy/sapper-tailwindcss-template.git your-app-name
 ```
 
 
