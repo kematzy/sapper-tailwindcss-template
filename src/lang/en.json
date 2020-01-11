@@ -1,10 +1,16 @@
 {
   "flag": "🇬🇧",
-  "page_title": "Sapper TailwindCSS Starter Project",
+  "seo": {
+    "site_title": "Sapper TailwindCSS Starter Project"
+  },
   "sign_in": "Sign in",
   "sign_up": "Sign up",
   "pages": {
     "home": {
+      "seo": {
+        "title": "Home",
+        "description": "Home page description"
+      },
       "h1": "Sapper TailwindCSS Starter i18n",
       "intro": "Enter your super app's description here... The key is to find the right length.  Don't want it to be too long, but then don't want it to be too short so that it looks weird between the title and button below."
     },

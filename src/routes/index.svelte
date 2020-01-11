@@ -14,7 +14,8 @@ import { _ } from 'svelte-i18n';
 </style>
 
 <svelte:head>
-  <title>{$_('page_title', { default: 'Sapper TailwindCSS Starter Template' })}</title>
+  <title>{$_('pages.home.seo.title')} | {$_('seo.site_title')}</title>
+  <meta name="description" content="{$_('pages.home.seo.description')}" />
 </svelte:head>
 
 <div class="flex flex-col md:flex-row pt-6">

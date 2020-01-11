@@ -1,10 +1,16 @@
 {
   "flag": "🇵🇹",
-  "page_title": "Título da página",
+  "seo": {
+    "site_title": "Sapper TailwindCSS Gabarito"
+  },
   "sign_in": "Entrar",
   "sign_up": "Registrar",
   "pages": {
     "home": {
+      "seo": {
+        "title": "Casa",
+        "description": "Descrição da página inicial"
+      },
       "h1": "Sapper TailwindCSS Gabarito",
       "intro": "Digite a descrição do seu super aplicativo aqui ... A chave é encontrar o comprimento certo. Não queira que seja muito longo, mas não seja muito curto para parecer estranho entre o título e o botão abaixo."
     },
