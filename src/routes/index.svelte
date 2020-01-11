@@ -30,7 +30,7 @@ import { _ } from 'svelte-i18n';
   <div class="w-full lg:w-1/2">
     <!--Add your product image here-->
     <Image alt="Autumn landscape in Yosemite National Park, USA" src="photos/aniket-deole-294646-unsplash.jpg" />
-    <span class="text-xs text-gray-500 m-0 pl-2">
+    <span class="text-xs text-gray-700 m-0 pl-2">
     Photo by <a href="https://unsplash.com/@anik3t?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Aniket Deole">Aniket Deole</a> on Unsplash
     </span>
 
