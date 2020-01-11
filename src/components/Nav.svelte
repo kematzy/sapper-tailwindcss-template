@@ -32,10 +32,10 @@
     }
 
     #nav-content {
-      @apply w-full flex flex-grow py-6;
+      @apply w-full flex-grow py-6;
 
       @media (min-width: 768px) {
-        @apply flex items-center w-auto hidden block py-0 pl-3;
+        @apply items-center w-auto block py-0 pl-3;
       }
     }
   }
