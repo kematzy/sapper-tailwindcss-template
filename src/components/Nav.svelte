@@ -129,7 +129,6 @@
               <li>
                 <a
                   class:selected={$locale.includes(item)}
-                  href={`#!${item}`}
                   on:click={() => ($locale = item)}>
                   {item.replace('-', '_')}
                 </a>
