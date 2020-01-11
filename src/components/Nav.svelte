@@ -86,6 +86,7 @@
 
   #i18n-flag {
     position: static;
+    font-size: 1.25rem;
   }
   .hoverable { position: static; }
   .hoverable > a:after {
@@ -122,7 +123,7 @@
         <a rel=prefetch href="blog" on:click={toggleHidden} title="{$_('nav.blog.title')}">{$_('nav.blog.text')}</a>
       </li>
       <li class="hoverable">
-        <a id="i18n-flag" class="lowercase">{$_('flag')} { $locale }</a>
+        <a id="i18n-flag" class="lowercase">{$_('flag')}</a>
         <div id="i18n-menu">
           <ul style="display: block;"><!-- NOTE: must keep style here to override global ul formatting -->
             {#each $locales as item}
