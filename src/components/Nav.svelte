@@ -70,16 +70,27 @@
     &:hover {
       @apply text-blue-200;
     }
+
+    &.selected:hover,
+    &.selected {
+      @apply text-blue-600;
+    }
   }
 
   #i18n-menu {
     @apply bg-gray-800 absolute hidden shadow-xl z-10;
 
     ul {
-      @apply block p-2;
+      @apply flex p-2;
 
-      li:hover {
-        @apply bg-gray-700;
+      li:hover a {
+        @apply text-blue-300;
+      }
+    }
+
+    @media (min-width: 768px) {
+      ul {
+        @apply block p-2;
       }
     }
   }
@@ -90,7 +101,7 @@
   }
   .hoverable { position: static; }
   .hoverable > a:after {
-    @apply text-gray-800 text-sm relative;
+    @apply text-gray-600 text-sm relative;
     content: "\25BC";
     padding-left: 6px;
     top: -1px;
