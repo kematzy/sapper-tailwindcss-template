@@ -5,6 +5,20 @@
   },
   "sign_in": "Entrar",
   "sign_up": "Registrar",
+  "nav": {
+    "home": {
+      "text": "Casa",
+      "title": "Voltar à página inicial"
+    },
+    "about": {
+      "text": "Sobre",
+      "title": "Mais informações sobre este projeto"
+    },
+    "blog": {
+      "text": "Blog",
+      "title": "Veja um blog de exemplo"
+    }
+  },
   "pages": {
     "home": {
       "seo": {

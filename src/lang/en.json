@@ -5,6 +5,20 @@
   },
   "sign_in": "Sign in",
   "sign_up": "Sign up",
+  "nav": {
+    "home": {
+      "text": "Home",
+      "title": "Back to home page"
+    },
+    "about": {
+      "text": "About",
+      "title": "More information about this project"
+    },
+    "blog": {
+      "text": "Blog",
+      "title": "View an example blog"
+    }
+  },
   "pages": {
     "home": {
       "seo": {
