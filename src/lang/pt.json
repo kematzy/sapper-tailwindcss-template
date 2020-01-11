@@ -15,6 +15,10 @@
       "intro": "Digite a descrição do seu super aplicativo aqui ... A chave é encontrar o comprimento certo. Não queira que seja muito longo, mas não seja muito curto para parecer estranho entre o título e o botão abaixo."
     },
     "about": {
+      "seo": {
+        "title": "Sobre",
+        "description": "Sobre a descrição da página"
+      },
       "h1": "Sobre este site",
       "intro": "Esta é a página \"sobre\". Não há muito aqui."
     }

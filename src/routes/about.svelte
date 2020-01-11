@@ -10,7 +10,8 @@ import { _ } from 'svelte-i18n';
 </style>
 
 <svelte:head>
-  <title>About</title>
+  <title>{$_('pages.about.seo.title')} | {$_('seo.site_title')}</title>
+  <meta name="description" content="{$_('pages.about.seo.description')}" />
 </svelte:head>
 
 <div class="flex flex-col md:flex-row">
