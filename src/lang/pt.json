@@ -21,6 +21,14 @@
       },
       "h1": "Sobre este site",
       "intro": "Esta é a página \"sobre\". Não há muito aqui."
+    },
+    "blog": {
+      "seo": {
+        "title": "Blog",
+        "description": "Blog a descrição da página"
+      },
+      "h1": "Postagens recentes",
+      "intro": "Uma coleção de postagens recentes no blog"
     }
   }
 }

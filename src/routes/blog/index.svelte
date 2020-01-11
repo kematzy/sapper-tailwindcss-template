@@ -7,6 +7,7 @@
 </script>
 
 <script>
+  import { _ } from 'svelte-i18n';
   export let posts;
 </script>
 
@@ -25,13 +26,14 @@
 </style>
 
 <svelte:head>
-  <title>Blog</title>
+  <title>{$_('pages.blog.seo.title')} | {$_('seo.site_title')}</title>
+  <meta name="description" content="{$_('pages.blog.seo.description')}" />
 </svelte:head>
 
 <div class="flex flex-col md:flex-row">
   <!--Left Col-->
   <div class="flex flex-col w-full lg:w-1/2 pt-6 pr-24 pb-24 px-6">
-    <h1>Recent posts</h1>
+    <h1>{$_('pages.blog.h1')}</h1>
 
     <ul>
       {#each posts as post}
