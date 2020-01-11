@@ -10,6 +10,7 @@
 const posts = [
   {
     title: 'What is Sapper?',
+    seo_description: 'What is Sapper? SEO description',
     slug: 'what-is-sapper',
     html: `
       <p>First, you have to know what <a href='https://svelte.dev'>Svelte</a> is. Svelte is a UI framework with a bold new idea: rather than providing a library that you write code with (like React or Vue, for example), it's a compiler that turns your components into highly optimized vanilla JavaScript. If you haven't already read the <a href='https://svelte.dev/blog/frameworks-without-the-framework'>introductory blog post</a>, you should!</p>
@@ -29,6 +30,7 @@ const posts = [
 
   {
     title: 'How to use Sapper',
+    seo_description: 'How to use Sapper SEO description',
     slug: 'how-to-use-sapper',
     html: `
       <h2>Step one</h2>
@@ -53,6 +55,7 @@ const posts = [
 
   {
     title: 'Why the name?',
+    seo_description: 'What the name? SEO description',
     slug: 'why-the-name',
     html: `
       <p>In war, the soldiers who build bridges, repair roads, clear minefields and conduct demolitions — all under combat conditions — are known as <em>sappers</em>.</p>
@@ -63,6 +66,7 @@ const posts = [
 
   {
     title: 'How is Sapper different from Next.js?',
+    seo_description: 'How is Sapper different from Next.js? SEO description',
     slug: 'how-is-sapper-different-from-next',
     html: `
       <p><a href='https://github.com/zeit/next.js'>Next.js</a> is a React framework from <a href='https://zeit.co'>Zeit</a>, and is the inspiration for Sapper. There are a few notable differences, however:</p>
@@ -78,6 +82,7 @@ const posts = [
 
   {
     title: 'How can I get involved?',
+    seo_description: 'How can I get involved? SEO description',
     slug: 'how-can-i-get-involved',
     html: `
       <p>We're so glad you asked! Come on over to the <a href='https://github.com/sveltejs/svelte'>Svelte</a> and <a href='https://github.com/sveltejs/sapper'>Sapper</a> repos, and join us in the <a href='https://svelte.dev/chat'>Discord chatroom</a>. Everyone is welcome, especially you!</p>

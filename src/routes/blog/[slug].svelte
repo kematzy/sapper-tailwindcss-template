@@ -14,6 +14,7 @@
 </script>
 
 <script>
+  import { _ } from 'svelte-i18n';
   export let post;
 </script>
 
@@ -63,7 +64,8 @@
 </style>
 
 <svelte:head>
-  <title>{post.title}</title>
+  <title>{post.title} | {$_('seo.site_title')}</title>
+  <meta name="description" content="{post.seo_description}" />
 </svelte:head>
 
 
