@@ -3,16 +3,19 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/28bb2415-f28d-40ef-9c41-3b4171fd2367/deploy-status)](https://app.netlify.com/sites/kematzy-sapper-tailwindcss-template/deploys)
 
 
-Based on the default [Sapper](https://github.com/sveltejs/sapper) [template](https://github.com/sveltejs/sapper-template).
+Based on the default [Sapper](https://github.com/sveltejs/sapper) [template](https://github.com/sveltejs/sapper-template), with the following additions:
 
-But with the following additions:
+- [Tailwind CSS](https://tailwindcss.com/) and [PostCSS](https://postcss.org/) support.
 
-- Tailwind CSS responsive navbar based upon: [TailwindToolbox.com - Responsive Header](https://www.tailwindtoolbox.com/templates/responsive-header)
+- [PurgeCSS](https://purgecss.com/) support in production mode only.
+
+- [PreCSS](https://github.com/jonathantneal/precss) enabled with support for Sass-like markup.
+
+- Tailwind CSS responsive navbar based upon: [TailwindToolbox.com - Responsive Header](https://www.tailwindtoolbox.com/templates/responsive-header).
 
 - Responsive Images, with automatic resizing based upon: [`svelte-image`](https://github.com/matyunya/svelte-image).
 
 - Internationalisation (i18n) support, with JSON based translation files based upon: [`svelte-i18n`](https://github.com/kaisermann/svelte-i18n).
-
 
 
 ## Getting started
