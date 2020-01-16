@@ -10,7 +10,7 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test:cypress": "run-p --race dev cy:run",
-    "test": "jest src",
+    "test": "jest",
     "test:watch": "yarn run test -- --watch"
   },
   "dependencies": {
