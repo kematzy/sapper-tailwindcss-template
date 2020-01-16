@@ -9,7 +9,9 @@
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run"
+    "test:cypress": "run-p --race dev cy:run",
+    "test": "jest src",
+    "test:watch": "yarn run test -- --watch"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
