@@ -1,13 +1,7 @@
 <script>
-// import Image from "svelte-image";
-import { _ } from 'svelte-i18n';
+  // import Image from "svelte-image";
+  import { _ } from 'svelte-i18n'
 </script>
-
-<style lang="postcss">
-  h1 {
-    @apply text-2xl text-blue-800 mb-6;
-  }
-</style>
 
 <svelte:head>
   <title>{$_('pages.about.seo.title')} | {$_('seo.site_title')}</title>
@@ -21,3 +15,9 @@ import { _ } from 'svelte-i18n';
     <p>{$_('pages.about.intro')}</p>
   </div>
 </div>
+
+<style lang="postcss">
+  h1 {
+    @apply text-2xl text-blue-800 mb-6;
+  }
+</style>

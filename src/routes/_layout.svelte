@@ -1,17 +1,27 @@
 <script context="module">
-import { isLoading, waitLocale } from 'svelte-i18n'
+  import { isLoading, waitLocale } from 'svelte-i18n'
 
-export async function preload() {
-  // awaits for the loading of the 'en-US' and 'en' dictionaries
-  return waitLocale()
-}
+  export async function preload() {
+    // awaits for the loading of the 'en-US' and 'en' dictionaries
+    return waitLocale()
+  }
 </script>
 
 <script>
-  import Nav from '../components/Nav.svelte';
+  import Nav from '../components/Nav.svelte'
 
-  export let segment;
+  export let segment
 </script>
+
+{#if $isLoading}
+  <div class="loading">Loading...</div>
+{/if}
+
+<Nav {segment} />
+
+<main class="container">
+  <slot />
+</main>
 
 <style lang="postcss">
   :global(body) {
@@ -42,13 +52,3 @@ export async function preload() {
     align-items: center;
   }
 </style>
-
-{#if $isLoading}
-  <div class="loading">Loading...</div>
-{/if}
-
-<Nav {segment}/>
-
-<main class="container">
-  <slot></slot>
-</main>

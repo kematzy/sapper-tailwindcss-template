@@ -2,21 +2,41 @@
   export async function preload({ params, query }) {
     // the `slug` parameter is available because
     // this file is called [slug].svelte
-    const res = await this.fetch(`blog/${params.slug}.json`);
-    const data = await res.json();
+    const res = await this.fetch(`blog/${params.slug}.json`)
+    const data = await res.json()
 
     if (res.status === 200) {
-      return { post: data };
+      return { post: data }
     } else {
-      this.error(res.status, data.message);
+      this.error(res.status, data.message)
     }
   }
 </script>
 
 <script>
-  import { _ } from 'svelte-i18n';
-  export let post;
+  import { _ } from 'svelte-i18n'
+  export let post
 </script>
+
+<svelte:head>
+  <title>{post.title} | {$_('seo.site_title')}</title>
+  <meta name="description" content="{post.seo_description}" />
+</svelte:head>
+
+<div class="flex flex-col md:flex-row">
+
+  <div class="w-full mt-4">
+    <h1>{post.title}</h1>
+
+    <div class="content">
+      {@html post.html}
+    </div>
+
+    <p class="text-right">
+      <a class="text-gray-600 underline" href="blog">back to Recent Posts</a>
+    </p>
+  </div>
+</div>
 
 <style lang="postcss">
   h1 {
@@ -62,22 +82,3 @@
     @apply m-0 mb-2 ml-6;
   }
 </style>
-
-<svelte:head>
-  <title>{post.title} | {$_('seo.site_title')}</title>
-  <meta name="description" content="{post.seo_description}" />
-</svelte:head>
-
-
-<div class="flex flex-col md:flex-row">
-
-  <div class="w-full mt-4">
-    <h1>{post.title}</h1>
-
-    <div class='content'>
-      {@html post.html}
-    </div>
-
-    <p class="text-right"><a class="text-gray-600 underline" href='blog'>back to Recent Posts</a></p>
-  </div>
-</div>
