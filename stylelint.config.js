@@ -20,25 +20,7 @@ module.exports = {
         ignoreProperties: ['font-path']
       },
     ],
-    'selector-nested-pattern': '^&',
+    'no-descending-specificity': null,
+    // 'selector-nested-pattern': '^&',
   },
 }
-
-
-
-// module.exports = {
-//   extends: ['stylelint-config-recommended'],
-//   rules: {
-//     'at-rule-no-unknown': [true, {
-//       ignoreAtRules: [
-//         'tailwind',
-//         'apply',
-//         'variants',
-//         'responsive',
-//         'screen'
-//       ]
-//     }],
-//     'declaration-block-trailing-semicolon': null,
-//     'no-descending-specificity': null
-//   }
-// }
