@@ -24,6 +24,6 @@
   "rules": {
     "prettier/prettier": "error",
     "svelte3/lint-template": 2,
-    "svelte3/ignore-styles": true
+    "svelte3/ignore-styles": 1
   }
 }
