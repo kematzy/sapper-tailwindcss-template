@@ -11,7 +11,8 @@
     "cy:open": "cypress open",
     "test:cypress": "run-p --race dev cy:run",
     "test": "jest",
-    "test:watch": "yarn run test -- --watch"
+    "test:watch": "yarn run test -- --watch",
+    "format": "npx prettier --write \"{,!(node_modules)/**/}*.{js,jsx}\""
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
