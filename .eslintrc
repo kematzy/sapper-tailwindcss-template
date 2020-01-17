@@ -24,6 +24,9 @@
   "rules": {
     "prettier/prettier": "error",
     "svelte3/lint-template": 2,
-    "svelte3/ignore-styles": 1
+    "svelte3/ignore-styles": 2,
+    "semi": "never",
+    "quotes": "double",
+    "comma-dangle": "never"
   }
 }
