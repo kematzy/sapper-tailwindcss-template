@@ -6,17 +6,17 @@ describe('Nav component', () => {
   context('visual colors (CSS)', () => {
     it('has the correct background color', () => {
       cy.get('nav')
-        .should('have.css','background-color', 'rgb(74, 85, 104)')
+        .should('have.css', 'background-color', 'rgb(74, 85, 104)')
     })
 
     it('has the correct brand foreground color', () => {
       cy.get('nav .brand a')
-        .should('have.css','color', 'rgb(226, 232, 240)')
+        .should('have.css', 'color', 'rgb(226, 232, 240)')
     })
 
     it('has the correct #nav-content link foreground color', () => {
       cy.get('nav #nav-content a')
-        .should('have.css','color', 'rgb(255, 255, 255)')
+        .should('have.css', 'color', 'rgb(255, 255, 255)')
     })
   })
 
@@ -25,15 +25,15 @@ describe('Nav component', () => {
       cy.get('nav .brand')
         .should('be.visible')
         .find('a')
-          .should('have.attr', 'href', '.')
-          .should('contain', 'Sapper TailwindCSS')
+        .should('have.attr', 'href', '.')
+        .should('contain', 'Sapper TailwindCSS')
     })
   })
 
   context('#nav-content', () => {
 
     it('has 3 nav > ul > li nodes', () => {
-      cy.get('nav ul > li').should('have.length', 3)
+      cy.get('nav ul > li').should('have.length', 6)
     });
 
     it('has only 1 > ul > li.active', () => {
@@ -43,7 +43,7 @@ describe('Nav component', () => {
     it('with Home link', () => {
       // cy.get('nav ul>li.active').first().contains('Home')
       cy.get('nav ul>li.active a')
-        .should('contain','Home')
+        .should('contain', 'Home')
         .should('have.attr', 'href', '.')
     });
 
@@ -116,17 +116,17 @@ describe('Nav component', () => {
       cy.get('nav .brand').should('be.visible')
     })
 
-    it('hides the #nav-contents and shows hamburger button', () => {
-      cy.get('nav #nav-content').should('not.be.visible')
-      cy.get('nav #nav-toggle').should('be.visible')
+    it('hides the hamburger button and shows the #nav-contents', () => {
+      cy.get('nav #nav-content').should('be.visible')
+      cy.get('nav #nav-toggle').should('not.be.visible')
     })
 
-    it('toggles #nav-contents when clicking hamburger button', () => {
-      cy.get('nav #nav-toggle').click()
-      cy.get('nav #nav-content').should('be.visible')
-      cy.get('nav #nav-toggle').click()
-      cy.get('nav #nav-content').should('not.be.visible')
-    })
+    // it('toggles #nav-contents when clicking hamburger button', () => {
+    //   cy.get('nav #nav-toggle').click()
+    //   cy.get('nav #nav-content').should('be.visible')
+    //   cy.get('nav #nav-toggle').click()
+    //   cy.get('nav #nav-content').should('not.be.visible')
+    // })
 
   }) // md 768px
 
